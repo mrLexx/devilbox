@@ -47,6 +47,15 @@
 !/log/.keepme
 !/log/*/.keepme
 
+/php74/log/php-fpm/*
+!/php74/log/.keepme
+!/php74/log/*/.keepme
+/php80/log/php-fpm/*
+!/php80/log/.keepme
+!/php80/log/*/.keepme
+/php81/log/php-fpm/*
+!/php81/log/.keepme
+!/php81/log/*/.keepme
 
 # Ignore custom global vhost gen templates
 /cfg/vhost-gen/apache22.conf
@@ -90,6 +99,10 @@
 /cfg/php-ini-8.0/*.ini
 /cfg/php-ini-8.1/*.ini
 
+/php74/cfg/php-ini/*.ini
+/php80/cfg/php-ini/*.ini
+/php81/cfg/php-ini/*.ini
+
 # Ignore custom PHP-FPM configs
 /cfg/php-fpm-5.2/php-fpm.xml
 /cfg/php-fpm-5.3/*.conf
@@ -103,6 +116,10 @@
 /cfg/php-fpm-7.4/*.conf
 /cfg/php-fpm-8.0/*.conf
 /cfg/php-fpm-8.1/*.conf
+
+/php74/cfg/php-fpm/*.conf
+/php80/cfg/php-fpm/*.conf
+/php81/cfg/php-fpm/*.conf
 
 # Ignore custom PHP-FPM startup scripts
 /autostart/*.sh
@@ -118,6 +135,13 @@
 /cfg/php-startup-7.4/*.sh
 /cfg/php-startup-8.0/*.sh
 /cfg/php-startup-8.1/*.sh
+
+/php74/autostart/*.sh
+/php74/cfg/php-startup/*.sh
+/php80/autostart/*.sh
+/php80/cfg/php-startup/*.sh
+/php81/autostart/*.sh
+/php81/cfg/php-startup/*.sh
 
 # Ignorecustom Varnish configs
 /cfg/varnish-4/*.vcl
@@ -138,13 +162,31 @@
 /mod/php-fpm-8.0/*.so
 /mod/php-fpm-8.1/*.so
 
+/php74/mod/php-fpm/*.so
+/php80/mod/php-fpm/*.so
+/php81/mod/php-fpm/*.so
+
 # Ignore supervisord configs
 /supervisor/*.conf
+
+/php74/supervisor/*.conf
+/php80/supervisor/*.conf
+/php81/supervisor/*.conf
 
 # Ignore custom bash and other confi files
 /bash/*
 !/bash/bashrc.sh-example
 !/bash/README.md
+
+/php74/bash/*
+!/php74/bash/bashrc.sh-example
+!/php74/bash/README.md
+/php80/bash/*
+!/php80/bash/bashrc.sh-example
+!/php80/bash/README.md
+/php81/bash/*
+!/php81/bash/bashrc.sh-example
+!/php81/bash/README.md
 
 # Ignore documentation sphinx build
 /docs/_build/
